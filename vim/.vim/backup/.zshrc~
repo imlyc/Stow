@@ -18,7 +18,4 @@ prompt adam2
 
 # OPAM configuration
 #. /home/yucliu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-#ls with color
 eval "$(dircolors .dircolors)"
-alias ls="ls --color=auto"
