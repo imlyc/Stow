@@ -97,7 +97,9 @@ endif
 
 " Personal Configure
 set backupdir=~/.vim/backup
+set tabstop=4
 set shiftwidth=4
+set expandtab
 set number
 set ruler
 set laststatus=2
