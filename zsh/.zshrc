@@ -19,7 +19,7 @@ prompt adam2
 #ls with color
 eval "$(gdircolors .dircolors)"
 alias ls="gls --color"
-alias g++="g++ -std=c++11"
+alias g++="g++ -std=c++1y"
 
 # OPAM configuration
 . /Users/imlyc/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

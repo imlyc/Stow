@@ -16,10 +16,10 @@ autoload -U promptinit
 promptinit
 prompt adam2
 
-# OPAM configuration
-. /home/yucliu/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
 #ls with color
 eval "$(gdircolors .dircolors)"
 alias ls="gls --color"
 alias g++="g++ -std=c++11"
+
+# OPAM configuration
+. /Users/imlyc/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
