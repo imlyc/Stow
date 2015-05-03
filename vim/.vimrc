@@ -140,3 +140,5 @@ map <C-p> :tprev <CR>
 " let Tlist_Exit_OnlyWindow = 1
 " let Tlist_Auto_Open = 1
 execute pathogen#infect()
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
