@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/imlyc/Work/beadvising/beadvising/student'
-let g:netrw_dirhist_2='/ssd/work/eureka/chromium/src/.git/logs'
-let g:netrw_dirhist_3='/var/www/html'
-let g:netrw_dirhist_4='/ssd/work/eureka'
-let g:netrw_dirhist_5='/ssd/work/eureka/bootable'
+let g:netrw_dirhist_2='/Users/imlyc/.config'
+let g:netrw_dirhist_3='/Users/imlyc/Work/beadvising/beadvising/student/migrations'
+let g:netrw_dirhist_4='/Users/imlyc/Work/beadvising/beadvising'
+let g:netrw_dirhist_5='/Users/imlyc/Work/game/HelloWorldDemo/proj.android.studio/gradle'
+let g:netrw_dirhist_6='/System/Library/Frameworks/Python.framework/Versions/2.7/lib'
+let g:netrw_dirhist_7='/usr/local/google/home/yucliu/Stow/vim/.vim'

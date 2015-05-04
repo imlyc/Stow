@@ -10,5 +10,3 @@ export CHROMIUM_SRC=/ssd/work/eureka/chromium/src
 #eval "$(gdircolors .dircolors)"
 alias ls="ls --color"
 alias g++="g++ -std=c++1y"
-
-
