@@ -21,8 +21,3 @@ eval "$(gdircolors ~/.dircolors)"
 alias ls="gls --color"
 alias g++="g++ -std=c++1y"
 alias node="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
-
-# OPAM configuration
-. /Users/imlyc/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
-. <(npm completion)
