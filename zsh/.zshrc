@@ -17,7 +17,7 @@ promptinit
 prompt adam2
 
 #ls with color
-eval "$(gdircolors .dircolors)"
+eval "$(gdircolors ~/.dircolors)"
 alias ls="gls --color"
 alias g++="g++ -std=c++1y"
 alias node="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
