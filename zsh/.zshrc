@@ -6,7 +6,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/yucliu/.zshrc'
+zstyle :compinstall filename $HOME/.zshrc
 
 autoload -Uz compinit
 compinit
@@ -16,8 +16,11 @@ autoload -U promptinit
 promptinit
 prompt adam2
 
-#ls with color
-eval "$(gdircolors ~/.dircolors)"
-alias ls="gls --color"
-alias g++="g++ -std=c++1y"
-alias node="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
+# set path in zshrc, as /etc/zprofile is evaluated after zshenv
+typeset -U path
+path=($HOME/.software/depot_tools $HOME/.software/bin /usr/local/bin /bin $path)
+
+# specific configs
+if [ -e ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
