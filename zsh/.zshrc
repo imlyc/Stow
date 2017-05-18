@@ -16,9 +16,12 @@ autoload -U promptinit
 promptinit
 prompt adam2
 
+# some variables
+export SW_HOME=$HOME/.software
+
 # set path in zshrc, as /etc/zprofile is evaluated after zshenv
 typeset -U path
-path=($HOME/.software/depot_tools $HOME/.software/bin /usr/local/bin /bin $path)
+path=($SW_HOME/bin $path)
 
 # specific configs
 if [ -e ~/.zshrc.local ]; then
