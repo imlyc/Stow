@@ -98,19 +98,18 @@ endif
 " Personal Configure
 set backupdir=~/.vim/backup
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set number
 set ruler
 set laststatus=2
+" scroll
+set scrolloff=20
 
 " Hightlight
 set cursorline
 hi cursorline cterm=bold ctermbg=black
 hi linenr ctermfg=cyan
-
-" scroll
-set scrolloff=20
 
 " " Omnicppcomplete
 " set nocp
@@ -120,7 +119,6 @@ filetype on
 se tags+=~/.vim/tags/opencv_tags
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
-
 
 " " OmniCppComplete
 " let OmniCpp_NamespaceSearch = 1
@@ -139,6 +137,9 @@ map <C-p> :tprev <CR>
 " let Tlist_Use_Right_Window = 1
 " let Tlist_Exit_OnlyWindow = 1
 " let Tlist_Auto_Open = 1
+
+" Clang format
+map <C-K> :pyf /usr/local/share/clang/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/local/share/clang/clang-format.py<cr>
+
 execute pathogen#infect()
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
