@@ -142,4 +142,6 @@ map <C-p> :tprev <CR>
 map <C-K> :pyf /usr/local/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/local/share/clang/clang-format.py<cr>
 
+inoremap jj <esc>
+
 execute pathogen#infect()

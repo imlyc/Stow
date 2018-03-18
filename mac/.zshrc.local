@@ -4,12 +4,38 @@ export ANDROID_HOME=$HOME/.software/android-sdk-macosx
 #export NDK_ROOT=/usr/local/opt/android-ndk
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# Scala
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+export SCALA_HOME=/usr/local/opt/scala
+
 typeset -U path
-path=($ANDROID_HOME/tools $ANDROID_HOME/platform-tools $HOME/.cabal/bin /Applications/Racket\ v6.4/bin /Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin /usr/local/mysql/bin $path)
+path=($HOME/.cargo/bin
+      $SW_HOME/depot_tools
+      /usr/local/linaro/arm-linux-gnueabihf-raspbian/bin
+      $ANDROID_HOME/tools
+      $ANDROID_HOME/platform-tools
+      $HOME/.cabal/bin
+      /Applications/Racket/bin
+      /Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin
+      /usr/local/mysql/bin
+      $path)
 
 #ls with color
 eval "$(gdircolors ~/.dircolors)"
 alias ls="gls --color"
 alias g++="g++ -std=c++1y"
+# alias atom="/Applications/Atom.app/Contents/MacOS/Atom"
 
 #alias node="node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/imlyc/.software/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/imlyc/.software/google-cloud-sdk/completion.zsh.inc'
+
+#function my-llvm-config () {
+#  llvm-config $@ | sed -e s/MacOSX10.10.sdk/MacOSX10.11.sdk/g
+#}
+#alias my-clang++="clang++ `my-llvm-config --cxxflags`"
+#alias my-clang="clang `my-llvm-config --cflags`"
