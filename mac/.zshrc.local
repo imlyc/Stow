@@ -11,6 +11,7 @@ export SCALA_HOME=/usr/local/opt/scala
 typeset -U path
 path=($HOME/.cargo/bin
       $SW_HOME/depot_tools
+      /usr/local/sbin
       /usr/local/linaro/arm-linux-gnueabihf-raspbian/bin
       $ANDROID_HOME/tools
       $ANDROID_HOME/platform-tools
